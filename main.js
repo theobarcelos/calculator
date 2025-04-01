@@ -9,9 +9,7 @@ function clean(){
 
 function calculate(){
     var result = document.getElementById('result').innerHTML;
-    var validValue = document.getElementById('validValue');
     if(result){
         document.getElementById('result').innerHTML = eval(result);
     }
 }
-
