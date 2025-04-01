@@ -1,12 +1,11 @@
 var displayCalc = document.getElementById('result');
-var validValue = document.getElementById('validValue');
 
 function insert(num){
     var number = displayCalc.innerHTML;
     var number2 = displayCalc.innerHTML = number + num;
     if(displayCalc.innerHTML.length > 8){
-        display.style.fontSize = "15px"
-        display.innerHTML = "Characters limit exceeded!";
+        displayCalc.style.fontSize = "15px"
+        displayCalc.innerHTML = "Characters limit exceeded!";
     }
 }
 
