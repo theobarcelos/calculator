@@ -18,8 +18,15 @@ html{
 h1{
     justify-self: center;
     font-size: 40px;
-    position: relative;
-    top: 100px;
+}
+
+@media  screen and (min-width: 1920px) {
+    h1{
+        justify-self: center;
+        font-size: 40px;
+        position: relative;
+        top: 90px;
+    }
 }
 
 .calculator{
