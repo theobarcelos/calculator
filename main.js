@@ -1,15 +1,23 @@
+var displayCalc = document.getElementById('result');
+var validValue = document.getElementById('validValue');
+
 function insert(num){
-    var number = document.getElementById('result').innerHTML;
-    var number2 = document.getElementById('result').innerHTML = number + num;
+    var number = displayCalc.innerHTML;
+    var number2 = displayCalc.innerHTML = number + num;
+    if(displayCalc.innerHTML.length > 8){
+        display.style.fontSize = "15px"
+        display.innerHTML = "Characters limit exceeded!";
+    }
 }
 
 function clean(){
-    document.getElementById('result').innerHTML = "";
+    displayCalc.innerHTML = "";
+    displayCalc.style.fontSize = "30px"
 }
 
 function calculate(){
-    var result = document.getElementById('result').innerHTML;
+    var result = displayCalc.innerHTML;
     if(result){
-        document.getElementById('result').innerHTML = eval(result);
+        displayCalc.innerHTML = eval(result);
     }
 }
