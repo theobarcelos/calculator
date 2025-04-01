@@ -1,6 +1,6 @@
 function insert(num){
-    var numero = document.getElementById('result').innerHTML;
-    var numero2 = document.getElementById('result').innerHTML = numero + num;  
+    var number = document.getElementById('result').innerHTML;
+    var number2 = document.getElementById('result').innerHTML = number + num;
 }
 
 function clean(){
@@ -9,9 +9,9 @@ function clean(){
 
 function calculate(){
     var result = document.getElementById('result').innerHTML;
+    var validValue = document.getElementById('validValue');
     if(result){
-        document.getElementById('result').innerHTML = eval(result)
+        document.getElementById('result').innerHTML = eval(result);
     }
 }
 
-backgroundColor

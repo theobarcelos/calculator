@@ -38,14 +38,14 @@ h1{
 
 .display{
     width: 160px;
-    height: 64px;
+    height: 55px;
     background-color: white;
     margin: 20px;
 }
 
 .result-class{
     text-align: right;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .calc-button{
@@ -93,4 +93,11 @@ h1{
 
 .equal-button:hover{
     opacity: 0.7;
+}
+
+h2{
+    justify-self: center;
+    position: relative;
+    top: 45rem;
+    display: none;
 }
